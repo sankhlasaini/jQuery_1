@@ -1,0 +1,182 @@
+  <!DOCTYPE html>
+
+  <html lang="en">
+  <head>
+
+  	<!-- Website Title & Description for Search Engine purposes -->
+  	<title>Movie Finder | Homepage</title>
+  	<meta name="description" content="">
+
+  	<!-- Mobile viewport optimized -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  	<!-- Bootstrap CSS -->
+
+  	<link href="css/bootstrap.css" rel="stylesheet">
+  	<link href="css/bootstrap.min.css" rel="stylesheet">
+  	<link href="css/mystyle.css" rel="stylesheet">
+  	<link href="css/bootstrap-glyphicons.css" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Iceland" rel="stylesheet">
+  	<link rel="stylesheet" href="css/font-awesome.min.css">
+  	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/dataTables.bootstrap.min.css">
+
+
+  	<!-- Include Modernizr in the head, before any other Javascript -->
+
+
+  </head>
+  <body>
+  	<!-- Container start -->
+  	<div class="container clearfix" id="main">
+  		<!-- navbar start -->
+  		<nav class="navbar navbar-default navbar-fixed-top" id=mynav> 
+  			<!-- container navbar start -->
+  			<div class="container-fluid">
+  				<!-- navbar header start -->
+  				<div class="navbar-header">
+
+  					<!-- mobile screen button start -->
+
+  					<button class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+  						<span class="sr-only">Toggle navigation</span>
+  						<span class="icon-bar"></span>
+  						<span class="icon-bar"></span>
+  						<span class="icon-bar"></span>
+  					</button>
+
+  					<!-- mobile screen button end -->
+
+  					<a class="navbar-brand" href="#" id="heading">Movie Finder</a>
+
+  				</div>
+  				<!-- navbar header end -->
+
+  				<!-- nav links, forms, and other content for toggling start-->
+  				<!-- form start for search -->
+  				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+  				
+
+  				<!-- form end for search -->
+
+  				<!-- user profile start-->
+  				<ul class=" nav navbar-nav navbar-right">
+  					<li class="dropdown" id="myNotActive">
+
+  						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>
+  							<span class="caret"></span></a>
+  							<ul class="dropdown-menu">
+  								<li><a href="#"><span class="glyphicon glyphicon-wrench"></span> Edit</a></li>
+  								<li><a href="#"><span class="glyphicon glyphicon-edit"></span> Change Password</a></li>
+  								<li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+  							</ul>
+  						</li>
+  					</ul><!-- user profile end-->
+
+
+  				</div>
+  				<!-- nav links, forms, and other content for toggling end-->
+
+  			</div><!-- nav links, forms, and other content for toggling end-->
+  			</nav>
+  			</div>
+
+
+  		</nav><!-- navbar end -->
+
+  	</div><!-- container end -->
+
+
+  	<!-- container main start -->
+  	<div class="container" id="panel">
+  		
+  		<div id="start" class="subhead" ><h1>Welcome</h1><h3>Search Movies | Series</h3></div>
+<form  action="#" method="get">
+  					<input type="text" class="form-control title" placeholder="Search" id="title">
+  				</form>
+
+  		<div class="row">
+  			<div class="col-lg-6">
+  				<h2 class="subhead" id="listHead"></h2>
+
+  				<table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
+  					<tbody id = "mytext">
+
+  					</tbody>
+  				</table>
+
+
+  			</div>
+  			<div class="col-lg-6">
+  				<h2 class="subhead" id="detailHead"></h2>
+  				<table id="movieDetail" class="table table-striped table-bordered" cellspacing="0" width="100%">
+  				</table>
+
+  			</div>
+  		</div>   
+  	</div>
+  	<!-- footer start -->
+  	<!-- <footer>
+  		<div class="container-fluid" id="footerid">
+  			<div class="row">
+  				<div class="col-lg-4">
+  					<p id="footerlogo">Movie Finder</p>
+  				</div>
+  				<div class="col-lg-4">
+  					<a href="#">About us</a><b class="footerlogo">|</b>
+  					<a href="#">Contact</a><b class="footerlogo">|</b>
+  					<a href="#">Blog</a><b class="footerlogo">|</b>
+  					<a href="#">FAQ</a>
+  				</div>
+
+  				<div class="col-lg-4">
+
+  					<a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+
+  					<a href="#"><i class="fa fa-google" aria-hidden="true"></i></a>
+
+  					<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+
+  					<a href="#"><i class="fa fa-whatsapp"></i> +917742693445</a>
+
+  				</div>
+  			</div>
+  		</div>
+  	</footer><!-- footer end --> -->
+
+
+
+  	<!-- All Javascript at the bottom of the page for faster page loading -->
+
+  	<!-- First try for the online version of jQuery-->
+  	<script src="http://code.jquery.com/jquery.js"></script>
+
+  	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+  	<script>window.jQuery || document.write('<script src="js/jquery-1.8.2.min.js"><\/script>')</script>
+
+  	<!-- Bootstrap JS -->
+  	<script src="js/bootstrap.min.js"></script>
+
+  	<!-- Custom JS -->
+  	<script src="js/script.js"></script>
+  	<script>$(window).scroll(function() {
+  		if ($(this).scrollTop() > 1){  
+  			$('nav').addClass("sticky");
+  		}
+  		else{
+  			$('nav').removeClass("sticky");
+  		}
+  	});</script>
+
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+  	</script>
+  	<script src="js/modernizr-2.6.2.min.js"></script>
+
+  	<script src="js/my.js"></script>
+
+  </body>
+  </html>
+
